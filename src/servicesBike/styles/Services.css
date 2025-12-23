@@ -1,0 +1,98 @@
+.services {
+  min-height: calc(100vh - 64px);
+  background-color: #020617;
+  color: #e5e7eb;
+  padding: 2rem 1rem 4rem;
+}
+
+/* HEADER */
+.services-header {
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.services-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-header p {
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* GRID */
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* CARD */
+.service-card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 1.8rem 1.5rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+/* TAG */
+.service-category {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 0.75rem;
+  background-color: #38bdf8;
+  color: #020617;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* TEXT */
+.service-card h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.service-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  background-color: #0ea5e9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 1.9rem;
+  }
+}

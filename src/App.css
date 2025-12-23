@@ -1,0 +1,47 @@
+/* Evita qualquer scroll lateral */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;  /* impede estourar sideways */
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+/* Container principal do app */
+.App {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;    /* impede esticar demais */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* força a não passar para o lado */
+}
+
+/* Conteúdo abaixo da navbar */
+main {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 70px; /* altura da navbar */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 480px) {
+  main {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

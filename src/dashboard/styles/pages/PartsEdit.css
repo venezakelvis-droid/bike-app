@@ -1,0 +1,125 @@
+/* LAYOUT */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #020617;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+  color: #e5e7eb;
+}
+
+/* FORM */
+.parts-form {
+  background: transparent;
+  padding: 0;
+}
+
+.parts-form input,
+.parts-form select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  border-radius: 6px;
+}
+
+.parts-form button {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  
+
+}
+
+.parts-list-header {
+  display: flex;
+  justify-content: space-between; /* ← isso resolve */
+  align-items: center;
+}
+
+.parts-list-header h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.actions button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.modal-actions .cancel {
+  background: transparent;
+  border: 1px solid #64748b;
+  color: #64748b;
+}
+
+.modal-actions button{
+  cursor: pointer;
+}
